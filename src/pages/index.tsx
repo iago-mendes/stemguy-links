@@ -1,6 +1,12 @@
+import Container from '../styles/pages/index'
+
 const Home: React.FC = () =>
 {
-  return <h1>Hello world!</h1>
+  return (
+		<Container>
+			
+		</Container>
+	)
 }
 
 export default Home

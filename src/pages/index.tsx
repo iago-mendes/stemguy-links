@@ -16,7 +16,7 @@ const Links: React.FC = () =>
 				<Image src={logo} width={200} height={200} priority />
 			</div>
 			<ul>
-				<a href='https://stemguy.club/twin-paradox-which-brother-is-older'>Last post</a>
+				<a href='https://stemguy.club/what-is-needed-for-a-website-to-work'>Last post</a>
 				<a href='https://stemguy.club'>Home page</a>
 			</ul>
 		</Container>

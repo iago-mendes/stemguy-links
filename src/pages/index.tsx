@@ -35,7 +35,7 @@ const Links: React.FC<LinksProps> = ({lastPost}) =>
 	function truncateTitle(title: string)
 	{
 		let truncated = title
-		const length = 40
+		const length = 35
 
 		if (truncated.length > length)
 			truncated = truncated.substr(0, length) + '...';

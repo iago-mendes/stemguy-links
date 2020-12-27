@@ -32,6 +32,17 @@ const Links: React.FC<LinksProps> = ({lastPost}) =>
 {
 	const url = `https://stemguy.club/${lastPost.url_id}`
 
+	function truncateTitle(title: string)
+	{
+		let truncated = title
+		const length = 40
+
+		if (truncated.length > length)
+			truncated = truncated.substr(0, length) + '...';
+
+		return truncated;
+	}
+
   return (
 		<Container>
 			<Head>
@@ -42,7 +53,10 @@ const Links: React.FC<LinksProps> = ({lastPost}) =>
 				<Image src={logo} width={200} height={200} priority />
 			</div>
 			<ul>
-				<a href={url}>Last post</a>
+				<a href={url}>
+					<h1>Last post</h1>
+					<h2>{truncateTitle(lastPost.title)}</h2>
+				</a>
 				<a href='https://stemguy.club'>Home page</a>
 			</ul>
 		</Container>

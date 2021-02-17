@@ -30,7 +30,7 @@ interface LinksProps
 
 const Links: React.FC<LinksProps> = ({lastPost}) =>
 {
-	const url = `https://stemguy.club/${lastPost.url_id}`
+	const url = `https://stemguy.club/p/${lastPost.url_id}`
 
 	function truncateTitle(title: string)
 	{
